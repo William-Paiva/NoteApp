@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# **NoteApp**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NoteApp is a simple note-taking app developed with **React**, **TypeScript**, **Tailwind CSS**, and **JSON Placeholder** for testing purposes. The app allows you to create, edit, and delete notes, with an intuitive and responsive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Features**
 
-## Expanding the ESLint configuration
+- **Create notes**: Allows you to add new notes with a title and content.
+- **Edit notes**: Notes can be edited after creation.
+- **Delete notes**: Notes can be removed with a confirmation.
+- **Search**: Allows you to search notes by title.
+- **Responsiveness**: The app adapts to different screen sizes, including mobile devices.
+  
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## **Technologies Used**
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript for improving code scalability and maintainability.
+- **Tailwind CSS**: Utility-first CSS framework for modern, responsive design.
+- **JSON Placeholder**: API for fake data, simulating a real backend.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## **How to Use**
+- **Add Note**: Click the "Add Notes" button at the top to open the modal. Fill in the title and content of your note, and click "Save" to save the note.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Edit Note**: Click the "Edit" button next to a note to open the modal and edit the title or content of the note. After editing, click "Save" to update the note.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Delete Note**: Click the "Delete" button to remove a note. You will be prompted to confirm the deletion before the note is removed.
+
+- **Search Notes**: Use the search field to find specific notes by typing the title in the search field.
+  
+---
+
+## **Responsiveness**
+The app is fully responsive with an adaptable design for different screen sizes, including:
+
+- **Desktop**: Optimized for large screens with a navigation layout.
+- **Tablets**: The design adjusts to provide a pleasant experience.
+- **Mobile**: The layout is optimized for small screens with adaptive buttons and text fields.
+
